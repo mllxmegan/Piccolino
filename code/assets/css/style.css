@@ -12,17 +12,25 @@ hr
   border: solid #e3d200 2px;
   width: 90%;
 }
+.logo
+{
+  height: 30%;
+}
 .container-fluid
 {
-  border-bottom: solid 2px #e3d200;
   width: auto;
   font-size: 2em;
 }
+.navbar
+{
+    border-bottom: solid 2px #e3d200;
+}
+
 .nav-item
 {
   margin-right: 5%;
 }
-
+/* DIAPORAMA */
 .carousel-caption
 {
   display: absolute;
@@ -40,4 +48,45 @@ hr
 .card
 {
   border-bottom: 12%;
+}
+.giorgio
+{
+  border-radius: 100%;
+}
+/* FOOTER */
+.site-footer
+{
+  background-color:white;
+  padding:0.2em 0 20px;
+  font-size:1em;
+  color: black;
+  margin-top:2em;
+  padding-top:1em;
+  padding-bottom:1em;
+  width: 100%;
+
+}
+.info-footer
+{
+width: 25%;
+}
+
+.logo-footer{
+height: 10%;
+}
+.social
+{
+  width: 20%;
+  height: 20%;
+  margin-right: 2%;
+}
+
+.contact-footer
+{
+  width: 30%;
+
+}
+.map
+{
+  width:25%;
 }
