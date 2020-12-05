@@ -1,17 +1,45 @@
-body
-{
-  background-image:url("../img/bg.jpg");
+@font-face{
+	font-family: 'Garamond Bold';
+	src: url('../font/garamondbold.ttf') format('truetype');
+}
+
+body{
+	font-family: 'Garamond Bold', Gerogia, serif;
+	color:black;
+	  background-image:url("../img/bg.jpg");
+}
+
+a{
+	color:black;
+  text-decoration: none;
+}
+a:hover{
+	cursor:pointer;
+}
+
+nav a:hover{
+	color:#9F9A1C ;
+	cursor:pointer;
+}
+h1{
+	font-weight: bold;
+	font-size:3.4em;
+	border-bottom:3px solid #DFCB00;
+	margin-top:5%;
+	margin-bottom:3%;
+	letter-spacing: 0.2em;
+	word-spacing: 0.1em;
+}
+h3{
+	font-weight: bold;
+	font-size:2.5em;
 }
 
 h5
 {
   font-size: 3em;
 }
-hr
-{
-  border: solid #e3d200 2px;
-  width: 90%;
-}
+/* NAV BARRE */
 .logo
 {
   height: 30%;
@@ -30,63 +58,407 @@ hr
 {
   margin-right: 5%;
 }
+
+
 /* DIAPORAMA */
+/* LEGENDE DES DIAPOS */
 .carousel-caption
 {
-  display: absolute;
-  top: 40%;
-  background-color: black;
-  opacity: 50%;
-  height: 30%;
+  background-color:rgba(0,0,0,0.4);
+	font-size:1.5em;
+	margin-bottom: 20%;
+	letter-spacing: 0.2em;
+	word-spacing: 0.1em;
 
 }
-.carousel-control-next,
-.carousel-control-prev {
-    filter: invert(100%);
+
+/* FLECHE DU CAROUSEL */
+.carousel-control-prev, .carousel-control-next{
+	opacity:1;
+}
+
+.carousel-control-prev:hover, .carousel-control-next:hover{
+	opacity:0.8;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    height: 7em;
+    width: 7em;
+}
+
+.carousel-control-prev-icon {
+	background-image: url("../img/flecheprev.png") !important;
+}
+
+.carousel-control-next-icon {
+	background-image: url("../img/flechenext.png") !important;
+}
+}
+/*NOS GAMMES*/
+h1[id^="gammes"] {
+padding-top: 10%;
+position: relative;
+top: -120px;
+margin-bottom: -100px;
+}
+.description1{
+	font-size:2em;
+	text-align:center;
+}
+/*section de la carte avec ombres et marges*/
+.gamme{
+	box-shadow: 0 0 15px 5px rgba(0,0,0,0.3);
+	margin:10%;
 
 }
-.card
-{
-  border-bottom: 12%;
+
+/*image gamme*/
+.imagegamme{
+	height:auto;
+	width:100%;
+	align-self: center;
 }
-.giorgio
-{
-  border-radius: 100%;
+
+/*image gamme dans fenêtre modale*/
+.imagegamme2{
+	height:auto;
+	width:100%;
+	display:block;
+	align-self: center;
+	margin-bottom: 5%;
 }
-/* FOOTER */
-.site-footer
-{
-  background-color:white;
-  padding:0.2em 0 20px;
-  font-size:1em;
+
+/*description de la carte*/
+.petittext{
+	font-size:0.6em;
+	font-weight: bold;
+}
+
+/*boutons Lire la suite*/
+.btn{
+	background-color:#DBCF00;
+	font-weight: bold;
+	font-size:0.9em;
+	position:relative;
+	z-index:1;
+}
+
+.btn:hover{
+	background-color:#CFB800;
+	font-size:0.9em;
+	cursor:pointer;
+}
+
+
+
+/*NOTRE HISTOIRE*/
+
+/*section de chaque carte de personnage, on enlève le style de la carte*/
+.sectionpersonnage{
+	background-color: transparent;
+	border:none;
+	margin:5%;
+	text-align: center;
+}
+
+/*nom des clients*/
+.nom{
+	text-align: center;
+	font-size: 2.5em;
+	font-weight: bold;
+	letter-spacing: 0.2em;
+}
+
+/*description*/
+.description{
+	text-align: center;
+	font-size:0.8em;
+	letter-spacing: 0.2em;
+	word-spacing: 0.1em;
+}
+
+/*PORTRAIT*/
+.photo{
+	align-self:center;
+	border-radius:50%;
+	height:10em;
+	width: 10em;
+	margin-bottom: -1.6em;
+}
+
+
+/*Nos origines*/
+.sectionorigine{
+	border-bottom:3px solid #DFCB00;
+	border-top:3px solid #DFCB00;
+	margin-top:5%;
+	margin-left:15%;
+	margin-right:15%;
+	background-color: transparent;
+	letter-spacing: 0.2em;
+	word-spacing: 0.1em;
+}
+
+/*Nos infrastructures*/
+.sectionorigine2{
+	border-bottom:3px solid #DFCB00;
+	margin-left:15%;
+	margin-right:15%;
+	background-color: transparent;
+	letter-spacing: 0.2em;
+	word-spacing: 0.1em;
+}
+
+/*Bordure */
+.bg-transparent{
+	border:none;
+}
+/*image atelier et infrastructures*/
+.imageorigine{
+	height:20em;
+	width: auto;
+	text-align: center;
+}
+
+/*titres Nos Origines et Nos Infrastructures*/
+.titreorigine{
+	margin-top:1em;
+}
+
+/*paragraphe nos origines et nos infrastructures*/
+.paragraphe{
+	font-size:1em;
+}
+
+/*Accordéon collapse*/
+
+.categorieaccordeon{
+	margin-left: 15%;
+	margin-right: 15%;
+	padding:10px;
+	background-color: #DFCB00;
+	border:1px solid black;
+	border-radius: 10px;
+}
+
+.categorieaccordeon:hover{
+	background-color: #CFB800;
+}
+
+.texteaccordeon{
   color: black;
-  margin-top:2em;
-  padding-top:1em;
-  padding-bottom:1em;
-  width: 100%;
+	background-color: white;
+	border-radius: 10px;
+	letter-spacing: 0.2em;
+	word-spacing: 0.1em;
+	margin-right:15%;
+	margin-left: 15%;
+	font-size: 0.9em;
+	padding:10px;
+}
 
+#accordeon{
+	margin-bottom:5%;
+	margin-top:5%;
+}
+
+/* FOOTER */
+footer
+{
+  background-color: white;
+  margin: 0;
+}
+.sitefooter
+{
+  margin-top:10%;
+	margin-bottom: 10%;
+	border:none;
 }
 .info-footer
 {
 width: 25%;
 }
+.titrefooter{
+	font-size:1.8em;
+	text-align: center;
+}
 
-.logo-footer{
-height: 10%;
+/* ADRESSE ET RS */
+.logofooter{
+	width:17em;
+	height:auto;
+	align-self: center;
+	margin-top:5%;
+	margin-bottom:5%;
+}
+.textfooter{
+	word-spacing: 0.1em;
+	letter-spacing: 0.2em;
+	font-size: 1.2em;
+}
+.tel{
+	margin-bottom: 10%;
+	margin-top:5%;
+}
 }
 .social
+
+.icone
 {
-  width: 20%;
-  height: 20%;
-  margin-right: 2%;
+	margin-left:3%;
+}
+/* RESEAUX SOCIAUX */
+.iconeRS{
+	height:2.7em;
+	width: auto;
+	margin-left: 5px;
+	margin:2%;
+}
+.iconeRS:hover{
+	opacity: 0.8;
+	cursor: pointer;
+}
+/* FORMULAIRE */
+.form-control
+{
+  border-radius: 10px;
+  border: solid black 1px;
+  background: #E3E3E3;
+  cursor:text;
+}
+.formulaire
+{
+margin:10px auto;
+width: 300px;
+padding: 20px 12px 10px 20px;
+word-spacing: 0.1em;
+letter-spacing: 0.2em;
 }
 
-.contact-footer
-{
-  width: 30%;
-
+/* GOOGLE MAP */
+.mapsection{
+	align-items: center;
 }
-.map
-{
-  width:25%;
+.map{
+	height:20em;
+	width: 20em;
+	text-align: center;
+	margin-top: 8%;
+}
+
+/* MENTIONS LEGALE */
+.mentions{
+	letter-spacing: 0.2em;
+	word-spacing: 0.1em;
+	font-size: 0.9em;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 1040px){
+	.imageorigine{
+		height:15em;
+		width: auto;
+	}
+
+	.iconeRS{
+	height:1.8em;
+	width: auto;
+}
+
+	.map{
+	height:15em;
+	width: 15em;
+}
+}
+
+@media screen and (max-width: 800px){
+	.imageorigine{
+		height:26em;
+		width: auto;
+	}
+
+	.iconeRS{
+	height:1.9em;
+	width: auto;
+	}
+
+	.mapsection{
+		margin-top:0;
+	}
+
+	.carousel-control-prev-icon, .carousel-control-next-icon {
+    height: 5em;
+    width: 5em;
+	}
+}
+
+@media screen and (max-width: 600px){
+/*entête*/
+	.logo{
+		height:3em;
+		width: auto;
+	}
+
+/*titres*/
+h1{
+	font-size:3em;
+	text-align:center;
+}
+
+h2{
+	font-size:2em;
+}
+/*carousel*/
+	.carousel{
+		margin-top:9%;
+		padding-top: 10%;
+	}
+
+/*section gamme*/
+	.petittext{
+		font-size:1.2em;
+	}
+
+	.btn{
+	font-size:1.2em;
+	}
+
+	.btn:hover{
+	font-size:1.2em;
+	}
+
+/*section notre histoire*/
+	.description{
+		font-size: 1em;
+	}
+
+	.imageorigine{
+		height:12em;
+		width: auto;
+	}
+/*reseauxsociaux footer*/
+
+	.iconeRS{
+	height:2.5em;
+	width: auto;
+	}
+}
+
+@media screen and (max-width: 400px){
+
+	.carousel-control-prev-icon, .carousel-control-next-icon {
+    height: 3em;
+    width: 3em;
+	}
+}
+
+@media screen and (max-width: 300px){
+	.imageorigine{
+		height:9em;
+		width: auto;
+	}
+
+	.iconeRS{
+	height:2.2em;
+	width: auto;
 }
