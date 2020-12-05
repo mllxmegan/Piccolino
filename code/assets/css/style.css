@@ -15,6 +15,7 @@ a{
 }
 a:hover{
 	cursor:pointer;
+  	color:black;
 }
 
 nav a:hover{
