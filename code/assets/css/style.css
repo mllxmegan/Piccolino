@@ -120,7 +120,7 @@ margin-bottom: -100px;
 	align-self: center;
 }
 
-/*image gamme dans fenêtre modale*/
+/*IMG FENETRE MODALE*/
 .imagegamme2{
 	height:auto;
 	width:100%;
@@ -154,7 +154,7 @@ margin-bottom: -100px;
 
 /*NOTRE HISTOIRE*/
 
-/*section de chaque carte de personnage, on enlève le style de la carte*/
+/*section de chaque carte*/
 .sectionpersonnage{
 	background-color: transparent;
 	border:none;
